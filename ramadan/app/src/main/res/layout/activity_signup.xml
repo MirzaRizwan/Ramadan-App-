@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:background="@drawable/gradient_splash"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="@drawable/ramzan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:drawableLeft="@drawable/person"
+            android:hint="Name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:drawableLeft="@drawable/address"
+            android:hint="Address" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:inputType="number"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:drawableLeft="@drawable/user_id"
+            android:gravity="center"
+            android:hint="CNIC"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:inputType="phone"
+            android:gravity="center"
+            android:drawableLeft="@drawable/phone"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:hint="Phone-NO" />
+
+    </LinearLayout>
+
+</LinearLayout>
